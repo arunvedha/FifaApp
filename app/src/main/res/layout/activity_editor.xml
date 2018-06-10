@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_margin"
+    android:orientation="vertical"
+    tools:context=".EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/category_overview"
+            style="@style/CategoryStyle" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_Team_A_name"
+                android:hint="@string/hint_pet_name"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+
+            <EditText
+                android:id="@+id/edit_Team_B_name"
+                android:hint="@string/hint_pet_breed"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="Date"/>
+        <EditText
+            android:id="@+id/match_date"
+            style="@style/EditorFieldStyle"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="Venue"/>
+        <EditText
+            android:id="@+id/match_venue"
+            style="@style/EditorFieldStyle"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="Time"/>
+        <EditText
+            android:id="@+id/match_time"
+            style="@style/EditorFieldStyle"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
